@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="./images/logo.png" alt="Here should be a logo photo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <img class="menu-icon" src="./images/menu.png" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h1>Victoria<br>model E106</h1>
+                <h3>Elegant violet dress</h3>
+                <p>Limited Edition</p>
+                <h4>$450</h4>
+                <button type="button">Buy Now<img src="./images/arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img class="dress" src="./images/violetdress-removebg-preview.png">
+                    <div class="color-box"></div> 
+                    <div class="add-button">
+                        <img src="./images/add.png">
+                        <p>Add to cart</p>
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="social-links">
+            <img src="./images/fb.png">
+            <img src="./images/ig.png">
+            <img src="./images/tw.png">
+        </div>
+
+    </div>
+
+    <script>
+
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+
+                if(menuList.style.maxHeight == "0px")      
+            {
+                menuList.style.maxHeight  = "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight  = "0px";
+            }
+            
+        }
+
+    </script>
+
+</body>
+</html>
